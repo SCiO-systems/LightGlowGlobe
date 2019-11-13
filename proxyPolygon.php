@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 $proxy_url =  $_SERVER['REQUEST_URI'];
 
-$GeotrellisIp = "http://ip:port"
+$geotrellisIp = "http://ip:port"
 
 $id = $_GET['id'];
 $pathOfCatalogues = $_GET['pathOfCatalogues'];
