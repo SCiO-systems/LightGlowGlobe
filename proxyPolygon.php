@@ -4,11 +4,13 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 $proxy_url =  $_SERVER['REQUEST_URI'];
 
+$GeotrellisIp = "http://ip:port"
+
 $id = $_GET['id'];
 $pathOfCatalogues = $_GET['pathOfCatalogues'];
 
 $postdata = file_get_contents("php://input");
-$actual_url = str_replace("/proxyPolygon.php","http://18.191.152.248:9007",$proxy_url);
+$actual_url = str_replace("/proxyPolygon.php", $GeotrellisIp , $proxy_url);
 $curl = curl_init();
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "9007",
